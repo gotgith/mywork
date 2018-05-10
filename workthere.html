@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    body{
+        font-family: arial;
+    }
+    .layout{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .layout>table{
+        margin-top: 30px;
+    }
+    .h-table{
+        border-collapse: collapse;/*border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。*/
+        border-spacing: 0;/*border-spacing 属性设置相邻单元格的边框间的距离（仅用于“边框分离”模式）*/
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+    .h-table tr {
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+    }
+    .h-table tr:nth-child(even){
+            background: #f1f1f1;
+    }
+    .h-table th{
+        color: #fff;
+        background-color: #4CAF50;
+        padding: 8px 8px;
+        font-weight: bold;
+    }
+    .h-table td{
+        padding: 8px 8px;
+    }
+    .h-table.v1{
+        border: none;
+    }
+    .h-table.v1 th{
+        background-color: #fff;
+        color: #000;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <table class="h-table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>Bo</td>
+                <td>Nilsson</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Ross</td>
+                <td>35</td>
+            </tr>
+        </table>
+        <table class="h-table v1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>Bo</td>
+                <td>Nilsson</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Ross</td>
+                <td>35</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
