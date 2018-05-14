@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     #content:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .aside{
+      width: 200px;
+      height: 500px;
+      background: blue;
+      float: right;
+    }
+    .menu{
+      width: 100px;
+      height: 500px;
+      background: red;
+      float: left;
+    }
+    .main{
+      margin-left: 110px; /*为什么要加margin-left*/
+      margin-right: 210px;
+      height: 400px;
+      background: pink;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <!-- 为什么不是main在前面 -->
+    <div class="menu">aside</div>
+    <div class="aside">aside</div>
+    <div class="main">content</div>
+  </div>
+</body>
+</html>
